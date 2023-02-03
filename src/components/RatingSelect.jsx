@@ -4,6 +4,7 @@ function RatingSelect({ select, selected }) {
     // }, [feedbackEdit])
   
     const handleChange = (e) => {
+        selected(+e.currentTarget.value)
         select(+e.currentTarget.value)
     }
   
