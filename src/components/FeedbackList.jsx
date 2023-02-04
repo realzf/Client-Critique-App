@@ -12,10 +12,7 @@ function FeedbackList() {
         </p>
     }
 
-    return isLoading ? (<h3>
-        <Spinner />
-    </h3>
-    ):(
+    return(
         <div className='feedback-list'>
             {feedback.map((item) => (
                 <FeedbackItem key={item.id} item={item}/>
